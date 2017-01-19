@@ -1,21 +1,18 @@
 # Basic Purescript Template Project for Experimentation
 
-##### make sure you have purescript installed
+##### Make sure you have purescript installed
 
 On Arch Linux:
 
 * `pacman -S purescript`
 * `npm install -g pulp bower`
 
-##### serve the web folder
+##### Start coding
 
-You could use WEBrick:
+After you cloned this repo:
 
+* `bower install`
+* serve the `web` folder e.g. with `ruby -run -ehttpd . -p3000`
+* live recompile your Purescript code `pulp --watch browserify --to ./web/static/js/app.js`
 
-* in the `web` filder run `ruby -run -ehttpd . -p3000`
-
-##### live recompile your Purescript code
-
-Use `pulp` with the `--watch` option:
-
-* `pulp --watch browserify --to ./web/js/app.js`
+Now you should see changes in you Purescript on [localhost](http://localhost:3000/)
