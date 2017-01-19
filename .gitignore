@@ -1,0 +1,9 @@
+/bower_components/
+/node_modules/
+/.pulp-cache/
+/output/
+/.psc*
+/.psa*
+
+# the generated JS
+/web/static/js/app.js
